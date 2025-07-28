@@ -1,6 +1,7 @@
 ---
 
 ## 📚 StoryGen: AI Story Creator
+Streamlit App is live on https://mohsinnyz-storygenerator.streamlit.app/
 
 ---
 
