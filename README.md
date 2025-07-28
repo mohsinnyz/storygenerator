@@ -1,7 +1,7 @@
-````
+````markdown
 # 📚 StoryGen: AI Story Creator
 
-![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png) ## Table of Contents
+![Streamlit App - StoryGen]![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png)
 
 * [About the Project](#about-the-project)
 * [Features](#features)
