@@ -1,8 +1,6 @@
-
----
-
 ````markdown
- ### 📚 StoryGen: AI Story Creator
+---
+## 📚 StoryGen: AI Story Creator
 
 ---
 
