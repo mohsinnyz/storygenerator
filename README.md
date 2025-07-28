@@ -1,151 +1,177 @@
+
+---
+
 ````markdown
 # 📚 StoryGen: AI Story Creator
 
-![Streamlit App - StoryGen]![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png)
+![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png)
 
-* [About the Project](#about-the-project)
-* [Features](#features)
-* [Live Demo](#live-demo)
-* [Technologies Used](#technologies-used)
-* [Getting Started Locally](#getting-started-locally)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-    * [Running the Application](#running-the-application)
-* [Deployment on Streamlit Community Cloud](#deployment-on-streamlit-community-cloud)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
+* [About the Project](#about-the-project)  
+* [Features](#features)  
+* [Live Demo](#live-demo)  
+* [Technologies Used](#technologies-used)  
+* [Getting Started Locally](#getting-started-locally)  
+    * [Prerequisites](#prerequisites)  
+    * [Installation](#installation)  
+    * [Running the Application](#running-the-application)  
+* [Deployment on Streamlit Community Cloud](#deployment-on-streamlit-community-cloud)  
+* [Acknowledgements](#acknowledgements)  
+* [Contact](#contact)  
 * [License](#license)
 
 ---
 
-## About the Project
+## 🧠 About the Project
 
 **StoryGen** is an interactive AI-powered web application built with Streamlit that helps users craft creative short stories from a basic idea. At its core, it leverages a **fine-tuned GPT-2 model (`mohsinnyz/storygen-gpt2medium-finetuned`)** for the primary generation of narrative drafts. To ensure the final output is coherent and aligns with specific creative parameters, the Google Gemini 1.5 Flash API is used for final touches and polishing.
 
 The goal of StoryGen is to provide an intuitive interface for anyone to experiment with AI-driven creative writing, from hobbyists to writers looking for inspiration.
 
-## Features
+---
 
-* **GPT-2 Powered Draft Generation:** Generates initial story drafts based on user prompts and selected creative parameters using a powerful fine-tuned GPT-2 model.
-* **Customizable Story Details:**
-    * Select from various **genres** (Fantasy, Sci-Fi, Mystery, Horror, Adventure, Romance, or "Any").
-    * Choose a desired **tone** (Serious, Funny, Dramatic, Poetic, or "Any").
-    * Define a **main character's name**.
-    * Specify a central **theme or moral**.
-    * Pick a **preferred ending type** (Happy, Tragic, Open-ended, Twist, or "Any").
-* **Advanced Generation Settings (for GPT-2):**
-    * Control **story length** (50 to 300 words).
-    * Adjust **creativity level (temperature)** for more imaginative or predictable outputs.
-    * Set **word pool size (top_k)** and **word pool confidence (top_p)** for fine-grained control over word selection.
-    * Generate **multiple story versions** (1 to 3).
-* **Gemini LLM for Polishing:** Employs the Google Gemini 1.5 Flash model to provide final refinements, enhancing coherence, narrative flow, and ensuring the story meets specified genre, tone, and ending requirements.
-* **User-Friendly Interface:** Built with Streamlit for a clean and interactive web experience.
+## ✨ Features
 
-## Live Demo
+- **GPT-2 Powered Draft Generation:** Generates initial story drafts based on user prompts and selected creative parameters using a powerful fine-tuned GPT-2 model.
+- **Customizable Story Details:**
+  - Select from various **genres** (Fantasy, Sci-Fi, Mystery, Horror, Adventure, Romance, or "Any").
+  - Choose a desired **tone** (Serious, Funny, Dramatic, Poetic, or "Any").
+  - Define a **main character's name**.
+  - Specify a central **theme or moral**.
+  - Pick a **preferred ending type** (Happy, Tragic, Open-ended, Twist, or "Any").
+- **Advanced Generation Settings (for GPT-2):**
+  - Control **story length** (50 to 300 words).
+  - Adjust **creativity level (temperature)**.
+  - Set **top_k** and **top_p** values for fine-grained control.
+  - Generate **multiple story versions** (1 to 3).
+- **Gemini LLM for Polishing:** Final polishing and rewriting using Google Gemini 1.5 Flash to improve coherence, flow, and creative alignment.
+- **User-Friendly Interface:** Built with Streamlit for simplicity and interactivity.
 
-Experience StoryGen live on Streamlit Community Cloud:
+---
 
-[**https://mohsinnyz-storygen.streamlit.app/**](https://mohsinnyz-storygen.streamlit.app/)
-*(Note: Please update this link with your actual custom URL once set in Streamlit Cloud, if `mohsinnyz-storygen` was unavailable.)*
+## 🚀 Live Demo
 
-## Technologies Used
+Try the live version here:  
+👉 [https://mohsinnyz-storygen.streamlit.app](https://mohsinnyz-storygen.streamlit.app)
 
-* **Python:** The core programming language.
-* **Streamlit:** For building the interactive web application.
-* **Hugging Face Transformers:**
-    * `GPT2LMHeadModel`: The primary model for initial text generation (specifically `mohsinnyz/storygen-gpt2medium-finetuned`).
-    * `GPT2Tokenizer`: For handling text encoding and decoding for the GPT-2 model.
-* **Google Gemini API (`google-generativeai`):** Utilized for the final polishing and refinement of generated stories.
-* **python-dotenv:** For securely loading API keys during local development.
+---
 
-## Getting Started Locally
+## 🛠 Technologies Used
 
-To run this project on your local machine, follow these steps:
+- **Python** – Core programming language.
+- **Streamlit** – Interactive frontend.
+- **Hugging Face Transformers**
+  - `GPT2LMHeadModel`, `GPT2Tokenizer` – For text generation.
+- **Google Gemini API** – For story enhancement.
+- **python-dotenv** – Securely manage API keys locally.
 
-### Prerequisites
+---
 
-* Python 3.8+ (recommended 3.10)
-* `pip` (Python package installer)
+## 🖥️ Getting Started Locally
 
-### Installation
+To run this project on your machine:
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/mohsinnyz/storygenerator.git](https://github.com/mohsinnyz/storygenerator.git)
-    cd storygenerator
-    ```
+### ✅ Prerequisites
 
-2.  **Create a virtual environment:**
-    ```bash
-    python -m venv venv
-    ```
+- Python 3.8+
+- `pip`
 
-3.  **Activate the virtual environment:**
-    * **On Windows:**
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    * **On macOS/Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+### 🔧 Installation
 
-4.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohsinnyz/storygenerator.git
+   cd storygenerator
+````
 
-5.  **Set up your Gemini API Key:**
-    * Obtain a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-    * Create a file named `.env` in the root directory of your project (the same directory as `app.py`).
-    * Add your API key to this file in the following format:
-        ```
-        GEMINI_API_KEY="YOUR_ACTUAL_GEMINI_API_KEY_HERE"
-        ```
-        **Important:** Do not commit this `.env` file to your Git repository. It's already included in `.gitignore` for this reason.
+2. Create a virtual environment:
 
-### Running the Application
+   ```bash
+   python -m venv venv
+   ```
 
-Once the setup is complete, run the Streamlit application:
+3. Activate it:
+
+   * **Windows:**
+
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   * **macOS/Linux:**
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Create a `.env` file:
+
+   ```ini
+   GEMINI_API_KEY="YOUR_ACTUAL_GEMINI_API_KEY_HERE"
+   ```
+
+---
+
+### ▶️ Running the Application
+
+Start the app:
 
 ```bash
 streamlit run app.py
-````
+```
 
-This will open the application in your default web browser.
+---
 
-## Deployment on Streamlit Community Cloud
+## ☁️ Deployment on Streamlit Community Cloud
 
-This application is deployed on Streamlit Community Cloud. If you wish to deploy your own version:
+To deploy:
 
-1.  Ensure your code is pushed to a GitHub repository (like this one).
-2.  Go to [Streamlit Community Cloud](https://share.streamlit.io/).
-3.  Connect your GitHub repository and select the `app.py` file as your main script.
-4.  **Crucially, set your `GEMINI_API_KEY` in the Streamlit Cloud "Secrets" section** of your app's settings.
-      * Click the three dots next to your app -\> Settings -\> Secrets.
-      * Add the secret in TOML format:
-        ```toml
-        GEMINI_API_KEY = "YOUR_ACTUAL_GEMINI_API_KEY_HERE"
-        ```
-      * Save the changes, and the app will redeploy.
+1. Push your code to a GitHub repository.
+2. Go to [streamlit.io/cloud](https://streamlit.io/cloud) and sign in.
+3. Click **"New app"** → select the GitHub repo.
+4. Set the Python file to `app.py`.
+5. Add a **secret** (API key) in the **"Secrets"** section:
 
-## Acknowledgements
+   ```
+   GEMINI_API_KEY = "your_actual_api_key"
+   ```
+6. Click **Deploy**.
 
-  * **Streamlit:** For providing an amazing platform for rapid app development.
-  * **Hugging Face Transformers:** For the powerful GPT-2 model and tokenizer, central to the story generation.
-  * **Google Gemini API:** For enabling the final text polishing capabilities.
-  * The broader AI and open-source communities for their invaluable contributions.
+---
 
-## Contact
+## 🙏 Acknowledgements
 
-Feel free to connect with me:
+* Hugging Face 🤗 for the transformers library.
+* Google for Gemini API.
+* Streamlit for the UI framework.
 
-  * **GitHub:** [mohsinnyz](https://www.google.com/search?q=https://github.com/mohsinnyz)
-  * **LinkedIn:** [Mohsin Nyz](https://www.google.com/search?q=https://linkedin.com/in/mohsinnyz)
+---
 
-## License
+## 📬 Contact
 
-This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+**Developer:** Mohsin Niaz
+**GitHub:** [@mohsinnyz](https://github.com/mohsinnyz)
+**Email:** [mohsinnyz@gmail.com](mailto:mohsinnyz@gmail.com)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ```
+
+---
+
+Let me know if you want:
+- The license file auto-generated (`MIT`).
+- A new logo/banner.
+- GitHub tags/badges (e.g., stars, forks, Streamlit deployed status).
+- A `setup.sh` for one-click deployment.
+
+You’re almost there!
 ```
