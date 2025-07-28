@@ -2,22 +2,7 @@
 ---
 
 ````markdown
-## 📚 StoryGen: AI Story Creator
-
-![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png)
-
-* [About the Project](#about-the-project)  
-* [Features](#features)  
-* [Live Demo](#live-demo)  
-* [Technologies Used](#technologies-used)  
-* [Getting Started Locally](#getting-started-locally)  
-    * [Prerequisites](#prerequisites)  
-    * [Installation](#installation)  
-    * [Running the Application](#running-the-application)  
-* [Deployment on Streamlit Community Cloud](#deployment-on-streamlit-community-cloud)  
-* [Acknowledgements](#acknowledgements)  
-* [Contact](#contact)  
-* [License](#license)
+ ### 📚 StoryGen: AI Story Creator
 
 ---
 
@@ -53,7 +38,7 @@ The goal of StoryGen is to provide an intuitive interface for anyone to experime
 Try the live version here:  
 👉 [https://mohsinnyz-storygen.streamlit.app](https://mohsinnyz-storygen.streamlit.app)
 
----
+---##
 
 ## 🛠 Technologies Used
 
