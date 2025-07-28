@@ -2,7 +2,7 @@
 ---
 
 ````markdown
-# 📚 StoryGen: AI Story Creator
+## 📚 StoryGen: AI Story Creator
 
 ![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png)
 
