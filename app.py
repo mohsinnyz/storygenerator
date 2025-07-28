@@ -121,11 +121,11 @@ with advanced_settings_col:
 st.markdown("---")
 
 # Generate story
-if st.button("🚀 Generate Story"):
+if st.button("Generate Story"):
     if not prompt.strip():
         st.warning("Please enter a basic story prompt.")
     else:
-        st.info("Generating your story...")
+        st.info("AI is cooking your story...")
 
         full_prompt = prompt.strip()
         if character_name:
