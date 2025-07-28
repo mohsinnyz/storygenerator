@@ -1,5 +1,5 @@
-
 ---
+
 ## 📚 StoryGen: AI Story Creator
 
 ---
@@ -26,75 +26,41 @@ The goal of StoryGen is to provide an intuitive interface for anyone to experime
   - Adjust **creativity level (temperature)**.
   - Set **top_k** and **top_p** values for fine-grained control.
   - Generate **multiple story versions** (1 to 3).
-- **Gemini LLM for Polishing:** Final polishing and rewriting using Google Gemini 1.5 Flash to improve coherence, flow, and creative alignment.
-- **User-Friendly Interface:** Built with Streamlit for simplicity and interactivity.
+- **Gemini API Enhancement:** Refines and polishes the final story version using Gemini 1.5 Flash for improved coherence, fluency, and creativity.
 
 ---
 
-## 🚀 Live Demo
+## 🔧 Installation
 
-Try the live version here:  
-👉 [https://mohsinnyz-storygen.streamlit.app](https://mohsinnyz-storygen.streamlit.app)
+1. **Clone the repository:**
 
----##
-
-## 🛠 Technologies Used
-
-- **Python** – Core programming language.
-- **Streamlit** – Interactive frontend.
-- **Hugging Face Transformers**
-  - `GPT2LMHeadModel`, `GPT2Tokenizer` – For text generation.
-- **Google Gemini API** – For story enhancement.
-- **python-dotenv** – Securely manage API keys locally.
-
----
-
-## 🖥️ Getting Started Locally
-
-To run this project on your machine:
-
-### ✅ Prerequisites
-
-- Python 3.8+
-- `pip`
-
-### 🔧 Installation
-
-1. Clone the repository:
    ```bash
    git clone https://github.com/mohsinnyz/storygenerator.git
    cd storygenerator
-````
+   ```
 
-2. Create a virtual environment:
+2. **Create a virtual environment:**
 
    ```bash
    python -m venv venv
    ```
 
-3. Activate it:
+3. **Activate the environment:**
 
-   * **Windows:**
-
+   - **Windows:**
      ```bash
      .\venv\Scripts\activate
      ```
-   * **macOS/Linux:**
 
+   - **macOS/Linux:**
      ```bash
      source venv/bin/activate
      ```
 
-4. Install dependencies:
+4. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
-   ```
-
-5. Create a `.env` file:
-
-   ```ini
-   GEMINI_API_KEY="YOUR_ACTUAL_GEMINI_API_KEY_HERE"
    ```
 
 ---
@@ -122,6 +88,7 @@ To deploy:
    ```
    GEMINI_API_KEY = "your_actual_api_key"
    ```
+
 6. Click **Deploy**.
 
 ---
@@ -136,8 +103,8 @@ To deploy:
 
 ## 📬 Contact
 
-**Developer:** Mohsin Niaz
-**GitHub:** [@mohsinnyz](https://github.com/mohsinnyz)
+**Developer:** Mohsin Niaz  
+**GitHub:** [@mohsinnyz](https://github.com/mohsinnyz)  
 **Email:** [mohsinnyz@gmail.com](mailto:mohsinnyz@gmail.com)
 
 ---
@@ -145,16 +112,3 @@ To deploy:
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-Let me know if you want:
-- The license file auto-generated (`MIT`).
-- A new logo/banner.
-- GitHub tags/badges (e.g., stars, forks, Streamlit deployed status).
-- A `setup.sh` for one-click deployment.
-
-You’re almost there!
-```
