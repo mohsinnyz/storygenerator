@@ -1,6 +1,4 @@
-Understood. I will provide a README.md file that emphasizes GPT-2 as the primary generation model and mentions Gemini LLM only for "final touches or polishing." The output will be a copy-paste ready file only, with no additional conversational text.
-
-````markdown
+````
 # 📚 StoryGen: AI Story Creator
 
 ![Streamlit App - StoryGen](https://user-images.githubusercontent.com/mohsinnyz/storygenerator/assets/your_screenshot_name.png) ## Table of Contents
