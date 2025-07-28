@@ -1,4 +1,4 @@
-````markdown
+
 ---
 ## 📚 StoryGen: AI Story Creator
 
